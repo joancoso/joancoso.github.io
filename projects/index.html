@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Jose Andres Cordero Solano</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<p class="breadcrumb"><a href="/">← Jose Andres Cordero Solano</a></p>
+<h1>Projects</h1>
+
+<nav class="site-nav">
+  <a href="/about/">About</a>
+  <a href="/research/">Research</a>
+  <a href="/projects/">Projects</a>
+  <span class="sep">|</span>
+  <a href="https://github.com/joancoso" class="external">GitHub</a>
+  <a href="https://www.linkedin.com/in/jocordero/" class="external">LinkedIn</a>
+  <a href="mailto:andres.cordero17@gmail.com" class="external">Email</a>
+</nav>
+
+<div class="projects">
+
+  <div class="project">
+    <span class="project-title">Drinking Water DBP Formation Model</span>
+    <p class="project-desc">
+      A predictive model for disinfection byproduct (DBP) formation during drinking water
+      chlorination. Given water quality parameters — dissolved organic carbon, bromide
+      concentration, pH, temperature, chlorine dose, and contact time — the model predicts
+      the expected yields of regulated trihalomethanes and haloacetic acids.
+    </p>
+    <p class="project-desc">
+      The model was trained on experimental and monitoring data and validated against
+      independent datasets. The primary design goal was interpretability: the model's
+      coefficients correspond to chemically meaningful relationships, making it useful
+      for treatment engineers who need to understand not just what the prediction is
+      but why it changes under different conditions.
+    </p>
+    <div class="project-tags">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">scikit-learn</span>
+      <span class="tech-tag">pandas</span>
+      <span class="tech-tag">Regression</span>
+      <span class="tech-tag">Water Chemistry</span>
+    </div>
+    <div class="project-links">
+      <a href="/projects/dbp-model/">Full case study</a>
+      <a href="#">Code</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <span class="project-title">Wastewater Organic Contaminant Removal Model</span>
+    <p class="project-desc">
+      A QSAR (quantitative structure–activity relationship) model that predicts the removal
+      efficiency of organic micropollutants in wastewater treatment based on molecular
+      structure. Rather than requiring compound-specific experimental data, the model uses
+      molecular descriptors computed from SMILES notation to estimate removal under
+      conventional activated sludge treatment conditions.
+    </p>
+    <p class="project-desc">
+      This is particularly useful for evaluating compounds with limited or no empirical
+      removal data — pharmaceuticals, industrial chemicals, and other emerging contaminants
+      where the regulatory interest outpaces the experimental literature. The model follows
+      OECD validation principles and includes applicability domain assessment.
+    </p>
+    <div class="project-tags">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">RDKit</span>
+      <span class="tech-tag">scikit-learn</span>
+      <span class="tech-tag">QSAR</span>
+      <span class="tech-tag">Cheminformatics</span>
+    </div>
+    <div class="project-links">
+      <a href="/projects/contaminant-removal/">Full case study</a>
+      <a href="#">Code</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Jose Andres Cordero Solano
+</footer>
+
+</body>
+</html>

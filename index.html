@@ -3,106 +3,84 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Your Name</title>
-
-<style>
-body{
-  max-width:720px;
-  margin:60px auto;
-  padding:0 20px;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  line-height:1.7;
-  color:#222;
-}
-
-h1{
-  margin-bottom:5px;
-  font-size:32px;
-}
-
-.subtitle{
-  color:#666;
-  margin-top:0;
-}
-
-nav{
-  margin:20px 0 40px 0;
-}
-
-nav a{
-  margin-right:15px;
-}
-
-a{
-  color:#0366d6;
-  text-decoration:none;
-}
-
-a:hover{
-  text-decoration:underline;
-}
-
-section{
-  margin-top:40px;
-}
-
-.project{
-  margin-bottom:18px;
-}
-
-footer{
-  margin-top:60px;
-  color:#777;
-  font-size:14px;
-}
-</style>
+<title>Jose Andres Cordero Solano</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<h1>Your Name</h1>
-<p class="subtitle">Short description — e.g. Software engineer interested in ML systems.</p>
+<h1>Jose Andres Cordero Solano</h1>
+<p class="tagline">Chemist and programmer — I build models that make water safer.</p>
 
-<nav>
-<a href="https://github.com/yourusername">GitHub</a>
-<a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-<a href="cv.pdf">CV</a>
-<a href="mailto:you@email.com">Email</a>
+<nav class="site-nav">
+  <a href="/about/">About</a>
+  <a href="/research/">Research</a>
+  <a href="/projects/">Projects</a>
+  <span class="sep">|</span>
+  <a href="https://github.com/joancoso" class="external">GitHub</a>
+  <a href="https://www.linkedin.com/in/jocordero/" class="external">LinkedIn</a>
+  <a href="mailto:andres.cordero17@gmail.com" class="external">Email</a>
 </nav>
 
-<section>
-<h2>About</h2>
-<p>
-Short paragraph about you. Your background, current interests, or what you work on.
-Keep it concise and factual.
-</p>
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Chemist by training, programmer by choice. I have spent my career at the intersection of
+    environmental chemistry and computational modeling — building tools that help predict and
+    prevent contamination in drinking water and wastewater systems.
+  </p>
+  <a href="/about/" class="read-more">More about me</a>
 </section>
 
-<section>
-<h2>Projects</h2>
+<section id="research">
+  <h2>Research</h2>
+  <p>
+    My work focuses on two interconnected problems: the unintended formation of harmful
+    disinfection byproducts during drinking water treatment, and the incomplete removal of
+    organic contaminants in wastewater. In both cases, I build predictive models that give
+    engineers actionable insight before running expensive experiments.
+  </p>
+  <a href="/research/" class="read-more">Research background</a>
+</section>
 
-<div class="project">
-<strong>Project One</strong><br>
-Short description of the project.<br>
-<a href="#">paper</a> | <a href="#">code</a>
-</div>
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
 
-<div class="project">
-<strong>Project Two</strong><br>
-Short description of the project.<br>
-<a href="#">code</a>
-</div>
+    <div class="project">
+      <span class="project-title">Drinking Water DBP Formation Model</span>
+      <p class="project-desc">Predictive model for disinfection byproduct formation during drinking water treatment, linking water chemistry parameters to DBP yields.</p>
+      <div class="project-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Chemistry</span>
+        <span class="tech-tag">Predictive Modeling</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects/dbp-model/">Details</a>
+        <a href="#">Code</a>
+      </div>
+    </div>
 
-<div class="project">
-<strong>Project Three</strong><br>
-Short description of the project.<br>
-<a href="#">demo</a> | <a href="#">code</a>
-</div>
+    <div class="project">
+      <span class="project-title">Wastewater Contaminant Removal Model</span>
+      <p class="project-desc">Predicts removal efficiencies of organic micropollutants in wastewater treatment based on molecular structure and treatment conditions.</p>
+      <div class="project-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Cheminformatics</span>
+        <span class="tech-tag">QSAR</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects/contaminant-removal/">Details</a>
+        <a href="#">Code</a>
+      </div>
+    </div>
 
+  </div>
+  <a href="/projects/" class="read-more">All projects</a>
 </section>
 
 <footer>
-Last updated 2026
+  © 2026 Jose Andres Cordero Solano
 </footer>
 
 </body>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Jose Andres Cordero Solano</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<p class="breadcrumb"><a href="/">← Jose Andres Cordero Solano</a></p>
+<h1>Research</h1>
+
+<nav class="site-nav">
+  <a href="/about/">About</a>
+  <a href="/research/">Research</a>
+  <a href="/projects/">Projects</a>
+  <span class="sep">|</span>
+  <a href="https://github.com/joancoso" class="external">GitHub</a>
+  <a href="https://www.linkedin.com/in/jocordero/" class="external">LinkedIn</a>
+  <a href="mailto:andres.cordero17@gmail.com" class="external">Email</a>
+</nav>
+
+<nav class="toc">
+  <p>Contents</p>
+  <ol>
+    <li><a href="#drinking-water">Drinking water treatment and DBPs</a></li>
+    <li><a href="#wastewater">Wastewater and micropollutants</a></li>
+    <li><a href="#modeling-approach">Modeling approach</a></li>
+    <li><a href="#tools">Tools and methods</a></li>
+  </ol>
+</nav>
+
+<section id="drinking-water">
+  <h2>Drinking water treatment and DBPs</h2>
+  <p>
+    Drinking water treatment relies on disinfection — typically with chlorine, chloramines,
+    or ozone — to inactivate pathogens before water reaches consumers. The problem is that
+    disinfectants do not react selectively. When they encounter the natural organic matter
+    present in source water (decomposed plant and animal material), they produce a range of
+    unintended compounds called disinfection byproducts, or DBPs.
+  </p>
+  <p>
+    Many DBPs are regulated because of their association with adverse health outcomes at
+    chronic exposure levels. The most studied are trihalomethanes (THMs) and haloacetic
+    acids (HAAs), but hundreds of others have been identified, most of them unstudied.
+    Treatment plants must balance effective disinfection against minimizing byproduct
+    formation — a tradeoff that depends on source water chemistry, treatment design,
+    and seasonal variation.
+  </p>
+  <p>
+    My work in this area focused on building predictive models for DBP formation. Rather
+    than prescribing a single treatment solution, these models give operators and engineers
+    a way to anticipate how changes in water chemistry or disinfectant dose will affect
+    byproduct yields — before making changes to an operating system.
+  </p>
+  <a href="/projects/dbp-model/" class="read-more">DBP formation model</a>
+</section>
+
+<section id="wastewater">
+  <h2>Wastewater and micropollutants</h2>
+  <p>
+    Wastewater treatment plants are designed primarily to remove bulk organic matter,
+    nutrients, and pathogens. They were not designed for the growing list of organic
+    micropollutants — pharmaceuticals, personal care products, industrial chemicals,
+    pesticides — that enter the water cycle through household and industrial discharge.
+  </p>
+  <p>
+    These compounds are present at very low concentrations (nanograms to micrograms per
+    liter), but many are biologically active at those concentrations. Some are endocrine
+    disruptors. Some are persistent. Conventional wastewater treatment removes some of
+    them well and others poorly, but predicting which compounds will be removed under
+    which conditions requires understanding both the chemistry of the compound and the
+    characteristics of the treatment process.
+  </p>
+  <p>
+    My models in this area use molecular descriptors — computed properties derived from
+    chemical structure — to predict removal efficiency without requiring compound-specific
+    experimental data. This is useful for regulators and treatment designers evaluating
+    compounds that have not yet been tested, or for assessing the relative risk of
+    treatment configurations.
+  </p>
+  <a href="/projects/contaminant-removal/" class="read-more">Contaminant removal model</a>
+</section>
+
+<section id="modeling-approach">
+  <h2>Modeling approach</h2>
+  <p>
+    Both research areas share a common challenge: the systems are complex, data are expensive
+    to generate, and the people who need the models are not statisticians. This shapes how
+    I build models.
+  </p>
+  <p>
+    I favor interpretable models over black boxes when the audience includes non-computational
+    practitioners. A regression with meaningful coefficients — where a chemist can look at
+    the model and say "yes, that makes chemical sense" — is more useful than a deep learning
+    model with marginally better cross-validation error and no interpretability. The goal is
+    a model that earns trust from the people who will use it, not just one that performs
+    well on held-out data.
+  </p>
+  <p>
+    That said, I do not treat interpretability as an absolute constraint. For some problems,
+    the data structure or the prediction task genuinely requires more expressive models.
+    The question I ask first is always: what decision does this model need to support, and
+    what does the person making that decision need to understand about the output?
+  </p>
+</section>
+
+<section id="tools">
+  <h2>Tools and methods</h2>
+  <p>
+    Most of my computational work is done in Python. For cheminformatics tasks, I work with
+    RDKit — generating molecular descriptors, fingerprints, and structure-based features
+    from SMILES representations. For modeling, I use scikit-learn for conventional machine
+    learning and statistical approaches.
+  </p>
+  <p>
+    Data wrangling is done with pandas; visualization with matplotlib and seaborn. For
+    structure–activity relationship (QSAR) work specifically, I follow OECD validation
+    principles: defined endpoint, unambiguous algorithm, defined applicability domain,
+    appropriate goodness-of-fit and robustness statistics, and a mechanistic interpretation
+    where possible.
+  </p>
+</section>
+
+<footer>
+  © 2026 Jose Andres Cordero Solano
+</footer>
+
+</body>
+</html>
