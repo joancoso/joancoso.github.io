@@ -214,6 +214,20 @@ nav.toc a {
   content: "→ ";
 }
 
+/* === LANGUAGE TOGGLE === */
+
+.lang-toggle {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: #9A9892;
+  font-weight: 500;
+}
+
+.lang-toggle:hover {
+  color: #7EB8D4;
+  text-decoration: none;
+}
+
 /* === FOOTER === */
 
 footer {

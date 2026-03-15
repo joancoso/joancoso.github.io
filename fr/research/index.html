@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recherche — Jose Andres Cordero Solano</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<p class="breadcrumb"><a href="/fr/">← Jose Andres Cordero Solano</a></p>
+<h1>Recherche</h1>
+
+<nav class="site-nav">
+  <a href="/fr/about/">À propos</a>
+  <a href="/fr/research/">Recherche</a>
+  <a href="/fr/projects/">Projets</a>
+  <span class="sep">|</span>
+  <a href="https://github.com/joancoso" class="external">GitHub</a>
+  <a href="https://www.linkedin.com/in/jocordero/" class="external">LinkedIn</a>
+  <a href="mailto:andres.cordero17@gmail.com" class="external">Email</a>
+  <span class="sep">|</span>
+  <a href="/research/" class="lang-toggle">EN</a>
+</nav>
+
+<nav class="toc">
+  <p>Sommaire</p>
+  <ol>
+    <li><a href="#eau-potable">Traitement de l'eau potable et SPD</a></li>
+    <li><a href="#eaux-usees">Eaux usées et micropolluants</a></li>
+    <li><a href="#approche-modelisation">Approche de modélisation</a></li>
+    <li><a href="#outils">Outils et méthodes</a></li>
+  </ol>
+</nav>
+
+<section id="eau-potable">
+  <h2>Traitement de l'eau potable et SPD</h2>
+  <p>
+    Le traitement de l'eau potable repose sur la désinfection — généralement au chlore,
+    aux chloramines ou à l'ozone — pour inactiver les pathogènes avant que l'eau n'atteigne
+    les consommateurs. Le problème est que les désinfectants ne réagissent pas de manière
+    sélective. Lorsqu'ils entrent en contact avec la matière organique naturelle présente
+    dans l'eau de source (matière végétale et animale décomposée), ils produisent une gamme
+    de composés involontaires appelés sous-produits de désinfection, ou SPD.
+  </p>
+  <p>
+    De nombreux SPD sont réglementés en raison de leur association avec des effets néfastes
+    sur la santé à des niveaux d'exposition chronique. Les plus étudiés sont les trihalométhanes
+    (THM) et les acides haloacétiques (AHA), mais des centaines d'autres ont été identifiés,
+    dont la plupart sont peu étudiés. Les stations de traitement doivent équilibrer une
+    désinfection efficace et la minimisation de la formation de sous-produits — un compromis
+    qui dépend de la chimie de l'eau de source, de la conception du traitement et des
+    variations saisonnières.
+  </p>
+  <p>
+    Mon travail dans ce domaine s'est concentré sur la construction de modèles prédictifs
+    pour la formation de SPD. Plutôt que de prescrire une solution de traitement unique,
+    ces modèles permettent aux exploitants et aux ingénieurs d'anticiper comment les
+    changements de chimie de l'eau ou de dose de désinfectant affecteront les rendements
+    en sous-produits — avant d'apporter des modifications à un système en fonctionnement.
+  </p>
+  <a href="/fr/projects/dbp-model/" class="read-more">Modèle de formation des SPD</a>
+</section>
+
+<section id="eaux-usees">
+  <h2>Eaux usées et micropolluants</h2>
+  <p>
+    Les stations d'épuration des eaux usées sont principalement conçues pour éliminer la
+    matière organique en vrac, les nutriments et les pathogènes. Elles n'ont pas été conçues
+    pour la liste croissante de micropolluants organiques — médicaments, produits de soins
+    personnels, produits chimiques industriels, pesticides — qui entrent dans le cycle de
+    l'eau par les rejets domestiques et industriels.
+  </p>
+  <p>
+    Ces composés sont présents à de très faibles concentrations (nanogrammes à microgrammes
+    par litre), mais beaucoup sont biologiquement actifs à ces concentrations. Certains sont
+    des perturbateurs endocriniens. Certains sont persistants. Le traitement conventionnel
+    des eaux usées élimine certains d'entre eux efficacement et d'autres mal, mais prédire
+    quels composés seront éliminés dans quelles conditions nécessite de comprendre à la fois
+    la chimie du composé et les caractéristiques du procédé de traitement.
+  </p>
+  <p>
+    Mes modèles dans ce domaine utilisent des descripteurs moléculaires — des propriétés
+    calculées dérivées de la structure chimique — pour prédire l'efficacité d'élimination
+    sans nécessiter de données expérimentales spécifiques au composé. Cela est utile pour
+    les régulateurs et les concepteurs de traitement évaluant des composés qui n'ont pas
+    encore été testés, ou pour évaluer le risque relatif des configurations de traitement.
+  </p>
+  <a href="/fr/projects/contaminant-removal/" class="read-more">Modèle d'élimination des contaminants</a>
+</section>
+
+<section id="approche-modelisation">
+  <h2>Approche de modélisation</h2>
+  <p>
+    Les deux domaines de recherche partagent un défi commun : les systèmes sont complexes,
+    les données sont coûteuses à générer, et les personnes qui ont besoin des modèles ne
+    sont pas des statisticiens. Cela façonne la manière dont je construis les modèles.
+  </p>
+  <p>
+    Je privilégie les modèles interprétables par rapport aux boîtes noires lorsque le public
+    inclut des praticiens non computationnels. Une régression avec des coefficients significatifs
+    — où un chimiste peut regarder le modèle et dire « oui, cela a un sens chimique » — est
+    plus utile qu'un modèle d'apprentissage profond avec une erreur de validation croisée
+    marginalement meilleure et aucune interprétabilité. L'objectif est un modèle qui gagne
+    la confiance des personnes qui l'utiliseront, pas seulement un modèle qui performe bien
+    sur des données de test.
+  </p>
+  <p>
+    Cela dit, je ne traite pas l'interprétabilité comme une contrainte absolue. Pour certains
+    problèmes, la structure des données ou la tâche de prédiction nécessite réellement des
+    modèles plus expressifs. La question que je pose en premier est toujours : quelle décision
+    ce modèle doit-il soutenir, et que doit comprendre la personne qui prend cette décision
+    sur le résultat ?
+  </p>
+</section>
+
+<section id="outils">
+  <h2>Outils et méthodes</h2>
+  <p>
+    La majeure partie de mon travail computationnel est réalisée en Python. Pour les tâches
+    de cheminformatique, je travaille avec RDKit — génération de descripteurs moléculaires,
+    d'empreintes digitales et de caractéristiques basées sur la structure à partir de
+    représentations SMILES. Pour la modélisation, j'utilise scikit-learn pour les approches
+    d'apprentissage automatique et statistiques conventionnelles.
+  </p>
+  <p>
+    La manipulation des données est réalisée avec pandas ; la visualisation avec matplotlib
+    et seaborn. Pour le travail QSAR (relation structure-activité quantitative) spécifiquement,
+    je suis les principes de validation de l'OCDE : point final défini, algorithme non ambigu,
+    domaine d'applicabilité défini, statistiques appropriées de qualité d'ajustement et de
+    robustesse, et une interprétation mécaniste lorsque possible.
+  </p>
+</section>
+
+<footer>
+  © 2026 Jose Andres Cordero Solano
+</footer>
+
+</body>
+</html>

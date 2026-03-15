@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projets — Jose Andres Cordero Solano</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+<p class="breadcrumb"><a href="/fr/">← Jose Andres Cordero Solano</a></p>
+<h1>Projets</h1>
+
+<nav class="site-nav">
+  <a href="/fr/about/">À propos</a>
+  <a href="/fr/research/">Recherche</a>
+  <a href="/fr/projects/">Projets</a>
+  <span class="sep">|</span>
+  <a href="https://github.com/joancoso" class="external">GitHub</a>
+  <a href="https://www.linkedin.com/in/jocordero/" class="external">LinkedIn</a>
+  <a href="mailto:andres.cordero17@gmail.com" class="external">Email</a>
+  <span class="sep">|</span>
+  <a href="/projects/" class="lang-toggle">EN</a>
+</nav>
+
+<div class="projects">
+
+  <div class="project">
+    <span class="project-title">Modèle de formation des SPD en eau potable</span>
+    <p class="project-desc">
+      Un modèle prédictif de la formation de sous-produits de désinfection (SPD) lors de
+      la chloration de l'eau potable. À partir de paramètres de qualité de l'eau — carbone
+      organique dissous, concentration en bromures, pH, température, dose de chlore et temps
+      de contact — le modèle prédit les rendements attendus en trihalométhanes et acides
+      haloacétiques réglementés.
+    </p>
+    <p class="project-desc">
+      Le modèle a été entraîné sur des données expérimentales et de surveillance, et validé
+      sur des jeux de données indépendants. L'objectif principal de conception était
+      l'interprétabilité : les coefficients du modèle correspondent à des relations
+      chimiquement significatives, le rendant utile pour les ingénieurs de traitement qui
+      ont besoin de comprendre non seulement quelle est la prédiction, mais pourquoi elle
+      change dans différentes conditions.
+    </p>
+    <div class="project-tags">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">scikit-learn</span>
+      <span class="tech-tag">pandas</span>
+      <span class="tech-tag">Régression</span>
+      <span class="tech-tag">Chimie de l'eau</span>
+    </div>
+    <div class="project-links">
+      <a href="/projects/dbp-model/">Étude de cas complète</a>
+      <a href="#">Code</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <span class="project-title">Modèle d'élimination des contaminants organiques en eaux usées</span>
+    <p class="project-desc">
+      Un modèle QSAR (relation structure-activité quantitative) qui prédit l'efficacité
+      d'élimination des micropolluants organiques en traitement des eaux usées à partir de
+      la structure moléculaire. Plutôt que de nécessiter des données expérimentales spécifiques
+      au composé, le modèle utilise des descripteurs moléculaires calculés à partir de la
+      notation SMILES pour estimer l'élimination dans les conditions de traitement par boues
+      activées conventionnelles.
+    </p>
+    <p class="project-desc">
+      Ceci est particulièrement utile pour évaluer des composés avec peu ou pas de données
+      d'élimination empiriques — médicaments, produits chimiques industriels et autres
+      contaminants émergents où l'intérêt réglementaire dépasse la littérature expérimentale.
+      Le modèle suit les principes de validation de l'OCDE et inclut une évaluation du
+      domaine d'applicabilité.
+    </p>
+    <div class="project-tags">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">RDKit</span>
+      <span class="tech-tag">scikit-learn</span>
+      <span class="tech-tag">QSAR</span>
+      <span class="tech-tag">Cheminformatique</span>
+    </div>
+    <div class="project-links">
+      <a href="/projects/contaminant-removal/">Étude de cas complète</a>
+      <a href="#">Code</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Jose Andres Cordero Solano
+</footer>
+
+</body>
+</html>
