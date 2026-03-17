@@ -228,6 +228,18 @@ nav.toc a {
   text-decoration: none;
 }
 
+/* === PULL QUOTE === */
+
+blockquote.pull-quote {
+  font-size: 24px;
+  line-height: 1.4;
+  color: #E8E6E0;
+  border-left: 4px solid #7EB8D4;
+  margin: 28px 0;
+  padding: 10px 24px;
+  font-style: italic;
+}
+
 /* === FOOTER === */
 
 footer {
