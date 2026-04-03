@@ -13,8 +13,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.7;
-  color: #D1CFC9;
-  background: #0F1A2B;
+  color: #2C3E50;
+  background: #F8F8F8;
 }
 
 /* === TYPOGRAPHY === */
@@ -22,13 +22,13 @@ body {
 h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  color: #E8E6E0;
+  color: #1A1A1A;
 }
 
 h2 {
   font-size: 22px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #1E2F45;
+  border-bottom: 1px solid #E0E0E0;
   padding-bottom: 4px;
 }
 
@@ -43,7 +43,7 @@ p {
 }
 
 a {
-  color: #7EB8D4;
+  color: #0066CC;
   text-decoration: none;
 }
 
@@ -52,10 +52,24 @@ a:hover {
 }
 
 .tagline {
-  color: #9A9892;
+  color: #666666;
   margin-top: 0;
   font-size: 20px;
 }
+
+/* === PROFILE PHOTO === */
+
+img.profile-photo {
+  width: 208px;
+  height: 208px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === SECTION === */
 
 section {
   margin-top: 50px;
@@ -73,21 +87,21 @@ nav.site-nav {
 nav.site-nav a {
   margin-right: 18px;
   font-weight: 500;
-  color: #D1CFC9;
+  color: #2C3E50;
 }
 
 nav.site-nav a:hover {
-  color: #7EB8D4;
+  color: #0066CC;
   text-decoration: none;
 }
 
 nav.site-nav .external {
-  color: #7EB8D4;
+  color: #0066CC;
   font-weight: 400;
 }
 
 nav.site-nav .sep {
-  color: #3A4F65;
+  color: #CCCCCC;
   margin-right: 18px;
   user-select: none;
 }
@@ -97,8 +111,8 @@ nav.site-nav .sep {
 nav.toc {
   margin: 30px 0;
   padding: 14px 18px;
-  border-left: 3px solid #1E3A56;
-  background: #111f30;
+  border-left: 3px solid #0066CC;
+  background: #FFFFFF;
   display: inline-block;
   min-width: 220px;
 }
@@ -107,7 +121,7 @@ nav.toc p {
   font-weight: 600;
   margin-bottom: 6px;
   font-size: 15px;
-  color: #9A9892;
+  color: #666666;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -123,7 +137,7 @@ nav.toc li {
 }
 
 nav.toc a {
-  color: #7EB8D4;
+  color: #0066CC;
 }
 
 /* === PROJECT CARDS === */
@@ -136,9 +150,9 @@ nav.toc a {
 
 .project {
   padding: 18px;
-  border: 1px solid #1E3A56;
+  border: 1px solid #E0E0E0;
   border-radius: 8px;
-  background: #162132;
+  background: #FFFFFF;
   transition: transform 0.05s ease, box-shadow 0.05s ease;
   margin-bottom: 0;
 }
@@ -151,13 +165,13 @@ nav.toc a {
 .project-title {
   font-weight: 600;
   font-size: 17px;
-  color: #E8E6E0;
+  color: #1A1A1A;
 }
 
 .project-desc {
   margin: 6px 0 8px 0;
   font-size: 16px;
-  color: #B0AEA8;
+  color: #555555;
 }
 
 .project-tags {
@@ -169,9 +183,9 @@ nav.toc a {
 
 .tech-tag {
   font-size: 12px;
-  color: #7EB8D4;
-  background: #0F1A2B;
-  border: 1px solid #1E3A56;
+  color: #0066CC;
+  background: #E8F0FF;
+  border: 1px solid #CCE0FF;
   border-radius: 4px;
   padding: 2px 7px;
 }
@@ -189,16 +203,16 @@ nav.toc a {
 
 .breadcrumb {
   font-size: 14px;
-  color: #9A9892;
+  color: #999999;
   margin-bottom: 6px;
 }
 
 .breadcrumb a {
-  color: #9A9892;
+  color: #999999;
 }
 
 .breadcrumb a:hover {
-  color: #7EB8D4;
+  color: #0066CC;
   text-decoration: none;
 }
 
@@ -206,7 +220,7 @@ nav.toc a {
   display: block;
   margin-top: 10px;
   font-size: 15px;
-  color: #7EB8D4;
+  color: #0066CC;
   font-style: italic;
 }
 
@@ -219,12 +233,12 @@ nav.toc a {
 .lang-toggle {
   font-size: 13px;
   letter-spacing: 0.05em;
-  color: #9A9892;
+  color: #999999;
   font-weight: 500;
 }
 
 .lang-toggle:hover {
-  color: #7EB8D4;
+  color: #0066CC;
   text-decoration: none;
 }
 
@@ -233,8 +247,8 @@ nav.toc a {
 blockquote.pull-quote {
   font-size: 24px;
   line-height: 1.4;
-  color: #E8E6E0;
-  border-left: 4px solid #7EB8D4;
+  color: #1A1A1A;
+  border-left: 4px solid #0066CC;
   margin: 28px 0;
   padding: 10px 24px;
   font-style: italic;
@@ -244,8 +258,8 @@ blockquote.pull-quote {
 
 footer {
   margin-top: 70px;
-  color: #3A4F65;
+  color: #CCCCCC;
   font-size: 14px;
-  border-top: 1px solid #1E2F45;
+  border-top: 1px solid #E0E0E0;
   padding-top: 16px;
 }
